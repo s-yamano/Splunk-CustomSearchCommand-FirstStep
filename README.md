@@ -6,3 +6,7 @@
 * ディレクトリ `HelloWord-work/` に 引数を取らない `generatehello` を作成した。
 * `HelloWorld-work/` を `$SPLUNK_HOME/etc/apps/HelloWorld/` としてコピーして利用する。
 
+## 1-2. step1-2
+
+* イベントの個数を引数で指定できるようにした。
+* 実行結果のイベントとして表示されるようにした。
