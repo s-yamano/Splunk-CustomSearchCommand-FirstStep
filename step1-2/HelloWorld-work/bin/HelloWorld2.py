@@ -21,8 +21,13 @@ class HelloWorldCommand(GeneratingCommand):
     %(description)
 
     """
+    count = Option(require=False, validate=validators.Integer(), default=1)
+
     def generate(self):
-        return [{"_time": time.time(), "greeting": "hello, world"}]
+
+        greeting_msg = "hello, world"
+        for i in range(0, self.count):
+            yield {"_time": time.time(), "greeting": greeting_msg, "_raw": greeting_msg}
 
 
 dispatch(HelloWorldCommand, sys.argv, sys.stdin, sys.stdout, __name__)
