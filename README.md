@@ -14,3 +14,11 @@
 
 * イベントの個数を引数で指定できるようにした。
 * 実行結果のイベントとして表示されるようにした。
+
+## 2. step2
+
+[Splunk のカスタムサーチコマンド作成 EventingCommand 編 (その1)]((https://qiita.com/msi/items/c41bbe35c806f487a482) にて作成したファイル群。
+
+* 大文字に変換する toupper コマンドを作成した。
+* Protocol Version 2 を利用。
+* searchbnf.conf を設定することで、ヘルプを表示できるようにした。
